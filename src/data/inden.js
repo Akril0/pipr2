@@ -20,7 +20,6 @@ const inden = (name, password) => {
                           Accept: 'application/json',
                           'Content-Type': 'application/json',
                        },
-
                        body: JSON.stringify(userInden),
                     })
                        .then((resp) => resp.json)

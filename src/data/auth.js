@@ -4,12 +4,7 @@ const auth = (name, password, setUser) => {
       .then((response) => response.json())
       .then((json) => {
          const [person] = json;
-         password =
-            person.id +
-            name.length -
-            name.replace(/\d/gm, '').length -
-            3 * name.length;
-         password === person.password
+         Number(password) === person.password
             ? setUser({ name: person.name })
             : console.error('Неверное имя пользователя или пароль');
       });

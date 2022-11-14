@@ -11,7 +11,7 @@ function Auth({ auth, inden, setUser }) {
       <div>
          <form>
             <label>
-               Логин
+               Логин{' '}
                <input
                   type="text"
                   value={data.userName}
@@ -19,7 +19,7 @@ function Auth({ auth, inden, setUser }) {
                />
             </label>
             <label>
-               Пароль
+               Пароль{' '}
                <input
                   type="password"
                   value={data.password}
